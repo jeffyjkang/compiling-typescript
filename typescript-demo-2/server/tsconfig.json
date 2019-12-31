@@ -1,0 +1,9 @@
+{
+  "extends": "./../tsconfig-base.json",
+  "compilerOptions": {
+    "outDir": "./../build/server",
+    "composite": true
+  }
+}
+
+// - p server/tsconfig.json
