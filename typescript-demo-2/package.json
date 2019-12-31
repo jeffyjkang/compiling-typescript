@@ -7,7 +7,10 @@
     "test": "tsc -v",
     "build-server": "tsc -p server",
     "build-client": "tsc -p client",
-    "serve": "node build/server/server.js"
+    "serve": "node build/server/server.js",
+    "debug": "node --inspect=9229 build/server/server.js",
+    "lint-server": "eslint server/*.ts",
+    "lint-client": "eslint client/*.ts"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +18,9 @@
   "devDependencies": {
     "@types/express": "^4.17.2",
     "@types/lodash": "^4.14.149",
+    "@typescript-eslint/eslint-plugin": "^2.14.0",
+    "@typescript-eslint/parser": "^2.14.0",
+    "eslint": "^6.8.0",
     "express": "^4.17.1",
     "lodash": "^4.17.15",
     "typescript": "^3.7.4"
