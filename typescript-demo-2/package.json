@@ -4,14 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "tsc -v"
+    "test": "tsc -v",
+    "build-server": "tsc -p server",
+    "build-client": "tsc -p client",
+    "serve": "node build/server/server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/express": "^4.17.2",
+    "@types/lodash": "^4.14.149",
     "express": "^4.17.1",
+    "lodash": "^4.17.15",
     "typescript": "^3.7.4"
   }
 }
